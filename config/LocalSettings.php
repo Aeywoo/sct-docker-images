@@ -1007,8 +1007,8 @@ $wgHooks['SkinAddFooterLinks'][] = function ( $sk, $key, &$footerlinks ) {
 		$footerlinks['cookiestatement'] = Html::rawElement(
 			'a',
 			[
-				'href'=> Title::newFromText(
-					$sk-msg( 'cookiestatementpage' )->inContentLanguage()->text()
+				'href' => Title::newFromText(
+					$sk->msg( 'cookiestatementpage' )->inContentLanguage()->text()
 				)->getFullURL()
 			],
 			$sk->msg( 'cookiestatement' )->escaped()
